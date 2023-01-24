@@ -29,7 +29,7 @@ int main()
 	book b;
 	b.getdetails();
 	fstream file;
-	file.open("book",ios::binary);
+	file.open("book",ios::out|ios::binary);
 	file.write((char*)&b, sizeof(b));
     file.close();
 	
